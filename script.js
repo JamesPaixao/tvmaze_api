@@ -18,7 +18,7 @@ const mostraPrograma = (title) => {
 }
 const pesquisaPrograma = async () => {
     try{
-        const url = `http://api.tvmaze.com/singlesearch/shows?q=${pesquisa.value}`;
+        const url = `https://api.tvmaze.com/singlesearch/shows?q=${pesquisa.value}`;
         const getTitle = await fetch(url);
         const title = await getTitle.json();
         
